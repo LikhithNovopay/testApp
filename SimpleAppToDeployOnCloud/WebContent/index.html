@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function getGreeting(){
+		var value = document.getElementById("input").value;
+		alert("Hello " + value);
+	}
+</script>
+</head>
+<body>
+	<center>
+		<h1>Sample Test Application</h1><hr>
+		<h3>Add input : </h3><input type="text" id="input"/><br><br>
+		<button onclick="getGreeting()">Get Greeting</button><br><br><hr><br>
+		
+		<form action="getGreeting" method="post">
+			Name : <input type="text" name="name"/><br><br>
+			Message : <input type="text" name="msg"/><br><br>
+			<input type="submit" value="Submit"/>
+		</form>
+	</center>
+</body>
+</html>
